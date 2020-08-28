@@ -2,9 +2,9 @@
 /* Declare on an element (root) */
 /* set default values on root */
 :root {
-    --base: #ffc600;
+    --base: #b379ae;
     --spacing: 10px;
-    --blur: 10px;
+    --blur: 0px;
 }
 
 /* highlight */
@@ -16,11 +16,14 @@ img {
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 
 body {
     text-align: center;
-    background: #193549;
+    background: #293036;
     color: white;
     font-family: 'helvetica neue', sans-serif;
     font-weight: 100;
