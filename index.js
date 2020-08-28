@@ -16,12 +16,19 @@ function handleUpdate() {
 
 }
 
+// refactor:
+inputs.forEach(input => {
+    input.addEventListener('change', handleUpdate);
+    input.addEventListener('mousemove', handleUpdate);
+})
+
+
 // iterate over each input and add an event listener if there is a change to pass on the handle update function
-inputs.forEach( input => input.addEventListener('change', handleUpdate))
+// inputs.forEach( input => input.addEventListener('change', handleUpdate))
 
 // Event listener for mouse movement
 // needs to have a ternary only for controls
-inputs.forEach( input => input.addEventListener('mousemove', handleUpdate))
+// inputs.forEach( input => input.addEventListener('mousemove', handleUpdate))
 
 // event listener for only when the mouse is clicked
 // inputs.forEach( input => input.addEventListener('mousedown', handleUpdate))
